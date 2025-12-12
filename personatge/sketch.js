@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
   let vol = mic.getLevel()*2;
-  let h = map(vol,0,0.5,10,200,true);
+  let h = map(vol,0,0.5,10,2000,true);
   let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
   let rosa=sin(frameCount*0.1)*80;
