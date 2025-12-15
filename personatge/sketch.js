@@ -1,3 +1,4 @@
+let mic;
 function setup() {
   createCanvas(725, 1024);
    mic = new p5.AudioIn();
@@ -1718,5 +1719,5 @@ vertex(366.5, 180.609375);
 vertex(360.5, 182.609375);
 vertex(354.5, 185.609375);
 vertex(350.5, 193.609375);
-endShape()
+endShape();
 }
