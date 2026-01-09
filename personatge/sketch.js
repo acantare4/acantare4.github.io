@@ -1,22 +1,25 @@
-let mic;
 function setup() {
   createCanvas(725, 1024);
-   mic = new p5.AudioIn();
+    mic = new p5.AudioIn();
   mic.start();
 }
-
-function draw() {
+function draw() {//let trist;
   let vol = mic.getLevel()*2;
-  let h = map(vol,0,0.5,10,2000,true);
+  let h = map(vol,0,0.5,10,200,true);
   let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
   let rosa=sin(frameCount*0.1)*80;
   let pupd=cos(frameCount*0.1)*7;
   let parpalleig=frameCount % 60 < 10;
- // print(sinus);
-  
+  print(sinus);
+  background ('red');
   background(255, 184, 222);
-  fill(255, 140, 199)
+  fill(255, 140, 199);
+  if (keyIsPressed === true) {
+    if (key === 'r') {
+      fill(255, 56, 158);
+    }
+  }
   beginShape();//cos incluint panxa, dits de mans i peus
 vertex(386.5, 201.609375);
 vertex(399.5, 207.609375);
@@ -724,8 +727,8 @@ vertex(372.5+pupd, 201.609375);
 vertex(369.5+pupd, 199.609375);
 vertex(368.5+pupd, 195.609375);
 vertex(379.5+pupd, 195.609375);
-endShape();
-}
+endShape()
+ }
   fill(255, 140, 199)
   beginShape();//dit del mixg esquerra
 vertex(219.5, 256.609375);
