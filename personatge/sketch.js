@@ -4,7 +4,7 @@ function setup() {
   mic.start();
 }
 function draw() {//let trist;
-  let vol = mic.getLevel()*2;
+  let vol = mic.getLevel()*20;
   let h = map(vol,0,0.5,10,200,true);
   let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
