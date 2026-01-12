@@ -34,7 +34,7 @@
     let modelsReady = false;
     let currentExpression = { dominant: 'neutral', intensity: 0 };
     let smoothIntensity = 0;
-
+let mic;
     // Traducció d'emocions a català
     const emotionsCA = {
       happy: "feliç",
@@ -59,7 +59,8 @@
 
     function setup() {
       createCanvas(windowWidth, windowHeight);
-
+ mic = new p5.AudioIn();
+  mic.start();
       video = createCapture(VIDEO);
       video.size(320, 240);
       video.hide();
