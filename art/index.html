@@ -2197,7 +2197,8 @@ endShape();
     }
 
     function figuraNeutral(intensity) {
-strokeWeight(1);
+stroke(0);
+      strokeWeight(2);
   let vol = mic.getLevel()*15;
   let h = map(vol,0,0.5,10,200,true);
   let sinus=sin(frameCount*0.1)*10;
