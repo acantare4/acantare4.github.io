@@ -1463,14 +1463,15 @@ endShape();
     }
 
     function figuraSorprès(intensity) {
-      
+    stroke(0);
+      strokeWeight(2);  
   let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
   let rosa=sin(frameCount*0.1)*80;
   let pupd=cos(frameCount*0.1)*7;
   let parpalleig=frameCount % 60 < 10;
  // print(sinus);
-  
+    }
   background(255, 184, 222);
   fill(255, 140, 199)
   beginShape();//cos incluint panxa, dits de mans i peus
