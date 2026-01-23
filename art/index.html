@@ -1460,22 +1460,15 @@ endShape();
     }
 
     function figuraSorprès(intensity) {
-    stroke(0);
-      strokeWeight(2);
-  let sinus=sin(frameCount*0.1)*10;
+    let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
   let rosa=sin(frameCount*0.1)*80;
   let pupd=cos(frameCount*0.1)*7;
   let parpalleig=frameCount % 60 < 10;
-  print(sinus);
-  background ('red');
+ // print(sinus);
+  
   background(255, 184, 222);
-  fill(255, 140, 199);
-  if (keyIsPressed === true) {
-    if (key === 'r') {
-      fill(255, 56, 158);
-    }
-  }
+  fill(255, 140, 199)
   beginShape();//cos incluint panxa, dits de mans i peus
 vertex(386.5, 201.609375);
 vertex(399.5, 207.609375);
@@ -1589,86 +1582,6 @@ vertex(368.5, 507.609375);
 vertex(369.5, 519.609375);
 vertex(371.5, 534.609375);
 vertex(375.5, 547.609375);
-vertex(378.5, 561.609375);
-vertex(392.5, 573.609375);
-vertex(403.5, 588.609375);
-vertex(417.5, 611.609375);
-vertex(428.5, 635.609375);
-vertex(433.5, 660.609375);
-vertex(434.5, 683.609375);
-vertex(437.5, 720.609375);
-vertex(438.5, 739.609375);
-vertex(437.5, 757.609375);
-vertex(438.5, 773.609375);
-vertex(443.5, 800.609375);
-vertex(451.5, 819.609375);
-vertex(462.5, 836.609375);
-vertex(478.5, 854.609375);
-vertex(495.5, 867.609375);
-vertex(511.5, 873.609375);
-vertex(527.5, 877.609375);
-vertex(543.5, 877.609375);
-vertex(559.5, 874.609375);
-vertex(576.5, 868.609375);
-vertex(592.5, 859.609375);
-vertex(604.5, 851.609375);
-vertex(612.5, 840.609375);
-vertex(618.5, 825.609375);
-vertex(620.5, 809.609375);
-vertex(616.5, 795.609375);
-vertex(609.5, 783.609375);
-vertex(602.5, 779.609375);
-vertex(592.5, 775.609375);
-vertex(578.5, 772.609375);
-vertex(568.5, 773.609375);
-vertex(556.5, 775.609375);
-vertex(543.5, 777.609375);
-vertex(529.5, 780.609375);
-vertex(518.5, 780.609375);
-vertex(518.5, 780.609375);
-vertex(509.5, 778.609375);
-vertex(497.5, 774.609375);
-vertex(488.5, 767.609375);
-vertex(479.5, 756.609375);
-vertex(475.5, 745.609375);
-vertex(477.5, 735.609375);
-vertex(483.5, 734.609375);
-vertex(490.5, 735.609375);
-vertex(501.5, 745.609375);
-vertex(508.5, 752.609375);
-vertex(522.5, 759.609375);
-vertex(546.5, 755.609375);
-vertex(576.5, 752.609375);
-vertex(599.5, 755.609375);
-vertex(619.5, 765.609375);
-vertex(631.5, 780.609375);
-vertex(639.5, 798.609375);
-vertex(641.5, 819.609375);
-vertex(633.5, 845.609375);
-vertex(622.5, 863.609375);
-vertex(606.5, 877.609375);
-vertex(585.5, 889.609375);
-vertex(553.5, 898.609375);
-vertex(523.5, 900.609375);
-vertex(496.5, 891.609375);
-vertex(472.5, 875.609375);
-vertex(448.5, 852.609375);
-vertex(435.5, 832.609375);
-vertex(424.5, 804.609375);
-vertex(418.5, 773.609375);
-vertex(418.5, 744.609375);
-vertex(416.5, 701.609375);
-vertex(414.5, 668.609375);
-vertex(408.5, 640.609375);
-vertex(394.5, 612.609375);
-vertex(383.5, 595.609375);
-vertex(375.5, 589.609375);
-vertex(374.5, 579.609375);
-vertex(378.5, 569.609375);
-vertex(378.5, 562.609375);
-vertex(378.5, 570.609375);
-vertex(374.5, 579.609375);
-vertex(375.5, 589.609375);
 vertex(373.5, 606.609375);
 vertex(379.5, 631.609375);
 vertex(382.5, 653.609375);
@@ -1892,27 +1805,6 @@ vertex(377.5, 184.609375);
 vertex(384.5, 192.609375);
 vertex(387.5, 201.609375);
 endShape();
-  fill(217, 4, 74);
-  beginShape();
-vertex(310.5, 254.609375);
-vertex(315.5, 254.609375);
-vertex(321.5, 252.609375);
-vertex(324.5, 250.609375);
-vertex(327.5, 257.609375);
-vertex(333.5, 262.609375);
-vertex(342.5, 268.609375);
-vertex(354.5, 271.609375);
-vertex(367.5, 270.609375);
-vertex(361.5, 278.609375);
-vertex(352.5, 286.609375);
-vertex(345.5, 292.609375);
-vertex(334.5, 290.609375);
-vertex(324.5, 286.609375);
-vertex(317.5, 284.609375);
-vertex(313.5, 275.609375);
-vertex(312.5, 262.609375);
-vertex(310.5, 254.609375);
-endShape();
   fill(255, 204, 227);
   beginShape();//panxa
 vertex(289.5, 545.609375);
@@ -1961,28 +1853,32 @@ vertex(323.5, 214.609375);
 vertex(358.5, 227.609375);
 vertex(363.5, 229.609375);
 endShape();
-  if (h >20){
-    h=20;
-  }
   fill(255, 204, 227);
- beginShape();
-vertex(311.5, 256.609375);
-vertex(312.5, 270.609375);
-vertex(315.5, 284.609375);
-vertex(320.5, 291.609375);
-vertex(330.5, 295.609375);
-vertex(341.5, 295.609375);
-vertex(353.5, 288.609375);
-vertex(359.5, 280.609375);
-vertex(367.5, 272.609375);
-vertex(368.5, 269.609375);
-vertex(363.5, 271.609375);
-vertex(355.5, 271.609375);
-vertex(345.5, 271.609375+h);
-vertex(337.5, 269.609375+h);
-vertex(325.5, 264.609375+h);
-vertex(317.5, 259.609375+h);
-vertex(311.5, 255.609375+h);
+beginShape();//part d'assota de la boca
+vertex(368.5, 268.609375);
+vertex(364.5, 277.609375);
+vertex(358.5, 286.609375);
+vertex(354.5, 291.609375);
+vertex(346.5, 300.609375);
+vertex(339.5, 304.609375);
+vertex(331.5, 306.609375);
+vertex(325.5, 307.609375);
+vertex(320.5, 306.609375);
+vertex(317.5, 303.609375);
+vertex(314.5, 297.609375);
+vertex(313.5, 291.609375);
+vertex(311.5, 281.609375);
+vertex(311.5, 273.609375);
+vertex(312.5, 263.609375);
+vertex(312.5, 255.609375);
+vertex(317.5, 255.609375);
+vertex(324.5, 251.609375);
+vertex(328.5, 258.609375);
+vertex(335.5, 265.609375);
+vertex(346.5, 271.609375);
+vertex(354.5, 272.609375);
+vertex(364.5, 269.609375);
+vertex(369.5, 267.609375);
 endShape();
   fill(255, 204, 227);
   beginShape();//part d'adalt de la boca
@@ -2016,6 +1912,29 @@ vertex(350.5, 235.609375);
 vertex(330.5, 238.609375);
 vertex(329.5, 237.609375);
 vertex(324.5, 250.609375);
+endShape();
+  fill(217, 4, 74);
+  beginShape();//boca sorpresa
+vertex(311.5, 254.609375);
+vertex(316.5, 253.609375);
+vertex(321.5, 252.609375);
+vertex(324.5, 251.609375);
+vertex(327.5, 256.609375);
+vertex(330.5, 261.609375);
+vertex(336.5, 264.609375);
+vertex(340.5, 267.609375);
+vertex(345.5, 272.609375);
+vertex(345.5, 278.609375);
+vertex(341.5, 283.609375);
+vertex(338.5, 286.609375);
+vertex(331.5, 287.609375);
+vertex(325.5, 287.609375);
+vertex(320.5, 287.609375);
+vertex(317.5, 285.609375);
+vertex(314.5, 282.609375);
+vertex(312.5, 274.609375);
+vertex(311.5, 265.609375);
+vertex(311.5, 253.609375);
 endShape();
   fill(246+rosa, 126+rosa, 198+rosa)
   beginShape();//nas
@@ -2088,18 +2007,6 @@ vertex(389.5, 281.609375);
 vertex(415.5, 304.609375);
 vertex(426.5, 317.609375);
 endShape();
-     beginShape();//somriure
-vertex(383.5, 257.609375);
-vertex(392.5, 258.609375);
-vertex(398.5, 257.609375);
-vertex(404.5, 255.609375);
-vertex(410.5, 251.609375);
-vertex(412.5, 248.609375);
-vertex(408.5, 244.609375);
-vertex(412.5, 247.609375);
-vertex(415.5, 250.609375);
-vertex(419.5, 252.609375);
-endShape();
   if (parpalleig) {
     fill(255, 140, 199);
   beginShape();//ull dret
@@ -2164,27 +2071,27 @@ vertex(355.5, 183.609375);
 endShape();
   fill(0,0,0)
   beginShape();//pupila dreta
-vertex(417.5+cosinus, 213.609375+cosinus);
-vertex(417.5+cosinus, 217.609375+cosinus);
-vertex(418.5+cosinus, 221.609375+cosinus);
-vertex(421.5+cosinus, 224.609375+cosinus);
-vertex(425.5+cosinus, 224.609375+cosinus);
-vertex(428.5+cosinus, 222.609375+cosinus);
-vertex(429.5+cosinus, 219.609375+cosinus);
-vertex(418.5+cosinus, 212.609375+cosinus);
-vertex(417.5+cosinus, 213.609375+cosinus);
+vertex(417.5, 213.609375);
+vertex(417.5, 217.609375);
+vertex(418.5, 221.609375);
+vertex(421.5, 224.609375);
+vertex(425.5, 224.609375);
+vertex(428.5, 222.609375);
+vertex(429.5, 219.609375);
+vertex(418.5, 212.609375);
+vertex(417.5, 213.609375);
 endShape();
  fill(0,0,0);
    beginShape();//pupila esquerra
-vertex(379.5+pupd, 196.609375);
-vertex(377.5+pupd, 199.609375);
-vertex(375.5+pupd, 201.609375);
-vertex(372.5+pupd, 201.609375);
-vertex(369.5+pupd, 199.609375);
-vertex(368.5+pupd, 195.609375);
-vertex(379.5+pupd, 195.609375);
-endShape()
- }
+vertex(379.5, 196.609375);
+vertex(377.5, 199.609375);
+vertex(375.5, 201.609375);
+vertex(372.5, 201.609375);
+vertex(369.5, 199.609375);
+vertex(368.5, 195.609375);
+vertex(379.5, 195.609375);
+endShape();
+}
   fill(255, 140, 199)
   beginShape();//dit del mixg esquerra
 vertex(219.5, 256.609375);
@@ -2202,31 +2109,25 @@ vertex(218.5, 270.609375);
 vertex(219.5, 261.609375);
 vertex(219.5, 256.609375);
 endShape();
-  fill(255, 204, 227)
-  beginShape();// part de dins de l'orella dreta
-vertex(462.5, 236.609375);
-vertex(465.5, 231.609375);
-vertex(469.5, 226.609375);
-vertex(474.5, 225.609375);
-vertex(475.5, 228.609375);
-vertex(474.5, 231.609375);
-vertex(471.5, 234.609375);
-vertex(467.5, 235.609375);
-vertex(462.5, 236.609375);
-vertex(465.5, 230.609375);
-endShape();
-  fill(255, 204, 227)
-  beginShape();//part de dins de l'orella esquerra
-vertex(343.5, 194.609375);
-vertex(345.5, 188.609375);
-vertex(345.5, 183.609375);
-vertex(343.5, 178.609375);
-vertex(338.5, 179.609375);
-vertex(337.5, 183.609375);
-vertex(337.5, 187.609375);
-vertex(339.5, 192.609375);
-vertex(343.5, 194.609375);
-vertex(345.5, 188.609375);
+  fill(158, 0, 13);
+ beginShape();//llengua
+vertex(351.5, 271.609375);
+vertex(349.5, 276.609375);
+vertex(345.5, 280.609375);
+vertex(339.5, 286.609375);
+vertex(334.5, 287.609375);
+vertex(327.5, 288.609375);
+vertex(321.5, 289.609375);
+vertex(317.5, 287.609375);
+vertex(315.5, 281.609375);
+vertex(315.5, 276.609375);
+vertex(317.5, 272.609375);
+vertex(324.5, 269.609375);
+vertex(330.5, 268.609375);
+vertex(335.5, 269.609375);
+vertex(341.5, 270.609375);
+vertex(348.5, 272.609375);
+vertex(351.5, 270.609375);
 endShape();
   fill(255, 140, 199)
   beginShape();//parpella dreta
@@ -3178,8 +3079,107 @@ vertex(366.5, 180.609375);
 vertex(360.5, 182.609375);
 vertex(354.5, 185.609375);
 vertex(350.5, 193.609375);
+endShape()
+ beginShape();//signe sorpresa
+vertex(475.5, 276.609375);
+vertex(511.5, 284.609375);
+endShape();
+  beginShape();//signe sorpresa
+vertex(485.5, 257.609375);
+vertex(538.5, 248.609375);
+endShape();
+  beginShape();//signe sorpresa
+vertex(259.5, 171.609375);
+vertex(214.5, 137.609375);
+endShape();
+  beginShape();//signe sorpresa
+vertex(243.5, 178.609375);
+vertex(211.5, 170.609375);
+endShape();
+  beginShape();//signe sorpresa
+vertex(237.5, 190.609375);
+vertex(190.5, 187.609375);
+endShape();
+  beginShape();//signe sorpresa
+vertex(467.5, 289.609375);
+vertex(521.5, 317.609375);
+endShape();
+  beginShape();//cua
+vertex(378.5, 563.609375);
+vertex(397.5, 579.609375);
+vertex(409.5, 597.609375);
+vertex(422.5, 621.609375);
+vertex(428.5, 629.609375);
+vertex(440.5, 633.609375);
+vertex(455.5, 632.609375);
+vertex(470.5+cosinus, 624.609375);
+vertex(492.5+cosinus, 607.609375);
+vertex(504.5+cosinus, 583.609375);
+vertex(515.5+cosinus, 557.609375);
+vertex(527.5+cosinus, 529.609375);
+vertex(534.5+cosinus, 494.609375);
+vertex(534.5+cosinus, 460.609375);
+vertex(536.5+cosinus, 430.609375);
+vertex(531.5+cosinus, 408.609375);
+vertex(526.5+cosinus, 391.609375);
+vertex(525.5+cosinus, 365.609375);
+vertex(527.5+cosinus, 345.609375);
+vertex(537.5+cosinus, 329.609375);
+vertex(548.5+cosinus, 322.609375);
+vertex(558.5+cosinus, 321.609375);
+vertex(565.5+cosinus, 331.609375);
+vertex(565.5+cosinus, 340.609375);
+vertex(563.5+cosinus, 350.609375);
+vertex(557.5+cosinus, 360.609375);
+vertex(556.5+cosinus, 370.609375);
+vertex(554.5+cosinus, 379.609375);
+vertex(555.5+cosinus, 397.609375);
+vertex(556.5+cosinus, 414.609375);
+vertex(557.5+cosinus, 428.609375);
+vertex(558.5+cosinus, 457.609375);
+vertex(558.5+cosinus, 477.609375);
+vertex(556.5+cosinus, 502.609375);
+vertex(550.5+cosinus, 532.609375);
+vertex(537.5+cosinus, 561.609375);
+vertex(525.5+cosinus, 594.609375);
+vertex(505.5+cosinus, 620.609375);
+vertex(487.5+cosinus, 641.609375);
+vertex(463.5, 652.609375);
+vertex(442.5, 658.609375);
+vertex(421.5, 658.609375);
+vertex(400.5, 631.609375);
+vertex(390.5, 601.609375);
+vertex(376.5, 586.609375);
+vertex(376.5, 578.609375);
+vertex(377.5, 572.609375);
+vertex(379.5, 568.609375);
+vertex(377.5, 561.609375);
+vertex(378.5, 562.609375);
+endShape();
+  fill(255, 204, 227);
+  beginShape();//part de dins de l'orella (esquerra)
+vertex(340.5, 192.609375);
+vertex(337.5, 186.609375);
+vertex(336.5, 179.609375);
+vertex(340.5, 176.609375);
+vertex(343.5, 177.609375);
+vertex(345.5, 182.609375);
+vertex(343.5, 187.609375);
+vertex(341.5, 191.609375);
+endShape();
+  beginShape();//part de dins de l'orella (dreta)
+vertex(462.5, 235.609375);
+vertex(466.5, 229.609375);
+vertex(470.5, 225.609375);
+vertex(475.5, 225.609375);
+vertex(476.5, 228.609375);
+vertex(474.5, 231.609375);
+vertex(467.5, 235.609375);
+vertex(463.5, 236.609375);
+vertex(463.5, 235.609375);
 endShape();
 }
+
     function figuraEspantat(intensity) {
    r = map(intensity, 0, 1, 255, 155);
    g = map(intensity, 0, 1, 255, 0);
