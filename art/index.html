@@ -35,7 +35,6 @@
     let modelsReady = false;
     let currentExpression = { dominant: 'neutral', intensity: 0 };
     let smoothIntensity = 0;
-let mic;
     // Traducció d'emocions a català
     const emotionsCA = {
       happy: "feliç",
@@ -60,8 +59,6 @@ let mic;
 
     function setup() {
       createCanvas(windowWidth, windowHeight);
- mic = new p5.AudioIn();
-  mic.start();
       video = createCapture(VIDEO);
       video.size(320, 240);
       video.hide();
@@ -3627,9 +3624,6 @@ endShape();
     function figuraNeutral(intensity) {
 stroke(0);
       strokeWeight(2);
-      let micLevel = mic.getLevel();
-  let vol = constrain(micLevel*3000,0,1);
-  let h = map(vol,0,0.5,10,200,true);
   let sinus=sin(frameCount*0.1)*10;
   let cosinus=cos(frameCount*0.1)*5;
   let rosa=sin(frameCount*0.1)*80;
